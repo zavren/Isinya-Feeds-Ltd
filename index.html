@@ -544,6 +544,30 @@
   a.product-name { display: block; }
 
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+.hero{background:none;overflow:hidden}.hero-slide{position:absolute;inset:0;background:center/cover no-repeat;opacity:0;transition:opacity 1.2s ease}.hero-slide.on{opacity:1}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(16,32,20,.55),rgba(16,32,20,.75) 60%,rgba(16,32,20,.92))}.hero .wrap{position:relative;z-index:2}
+.trust-item{text-align:center}.trust-item h3{font-size:2rem;color:var(--gold)}
+.intro-img{max-width:720px;width:100%;margin:30px auto 0;border-radius:6px;aspect-ratio:16/9;object-fit:cover}
+.pager{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:36px}.pager button{min-width:40px;height:40px;border:1px solid var(--line);background:#fff;border-radius:4px;cursor:pointer;font-weight:600;color:var(--green-deep)}.pager button.on{background:var(--green-deep);color:#fff}.pager button:disabled{opacity:.4;cursor:default}
+.appt{background:var(--green-deep);color:#fff}.appt h2,.appt h3{color:#fff}.appt .eyebrow{color:var(--gold-soft)}.appt .lead{color:rgba(255,255,255,.85)}
+.appt-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+.appt-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:32px}
+.appt-label{font-size:.85rem;color:var(--gold-soft);font-weight:600}.appt-price{font-family:'Spectral',serif;font-size:3.2rem;font-weight:700;color:var(--gold-soft);line-height:1.1;margin:4px 0 18px}
+.appt-card ul{margin:10px 0 0 18px;list-style:disc;font-size:.92rem;color:rgba(255,255,255,.88)}.appt-card li{margin-bottom:6px}.appt-item{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font-size:.92rem;color:rgba(255,255,255,.88)}.appt-item strong{color:#fff}
+.appt-form{background:#fff;color:var(--ink);border-radius:6px;padding:32px}.appt-form h3{color:var(--green-deep);margin-bottom:6px}.appt-form p{font-size:.9rem;color:var(--ink-soft);margin-bottom:20px}
+.appt-form input,.appt-form select,.appt-form textarea,.cage-form input,.cage-form select,.cage-form textarea{width:100%;border:1px solid var(--line);border-radius:4px;padding:12px 14px;font:inherit;background:#fff}
+@media(max-width:860px){.appt-grid{grid-template-columns:1fr}}
+.poultry{background:var(--cream)}.sub{font-size:1.5rem;margin:60px 0 22px}.sub:first-of-type{margin-top:0}.sub-note{color:var(--ink-soft);margin:-10px 0 22px;max-width:680px}
+.table-wrap{overflow-x:auto;margin-top:34px}.ptable{width:100%;border-collapse:collapse;background:#fff}.ptable td,.ptable th{padding:12px 16px;border:1px solid var(--line);text-align:left;font-size:.9rem}.ptable th{background:var(--green-deep);color:#fff}
+.poultry .checkout-notice{margin-top:26px}
+.cages{background:#fff}.cage-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:30px}.cage-gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px}
+.cage-feat{background:var(--cream);border-radius:6px;padding:26px 30px;margin-bottom:10px}.cage-feat li{padding-left:24px;position:relative;margin-bottom:8px;color:var(--ink-soft)}.cage-feat li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.cage-prices{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.cage-prices .val{font-family:'Spectral',serif;font-size:1.5rem;font-weight:700;color:var(--green-deep);margin:10px 0 14px}
+.cage-form{max-width:560px;margin-top:50px;background:var(--cream);border-radius:6px;padding:30px}.cage-form h3{margin-bottom:6px}.cage-form p{color:var(--ink-soft);font-size:.9rem;margin-bottom:18px}
+@media(max-width:900px){.cage-gal,.cage-prices{grid-template-columns:repeat(2,1fr)}}
+.feed-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:.88rem}.feed-row a{color:var(--gold);font-weight:600}
+.nav-appt{background:var(--gold);color:#fff!important;padding:8px 16px;border-radius:4px;opacity:1!important}
 </style>
 </head>
 <body>
@@ -554,15 +578,7 @@
       <img src="https://res.cloudinary.com/hztm3zo8/image/upload/v1788724672/1788718648861_fidqyr.jpg" alt="Isinya Feeds Ltd logo" onerror="this.style.display='none'">
       Isinya Feeds Ltd
     </a>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#shop">Feeds</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <nav><ul><li><a href="#home">Home</a></li><li><a href="#shop">Shop</a></li><li><a href="#poultry">Poultry</a></li><li><a href="#cages">Layer Cages</a></li><li><a href="#about">About Us</a></li><li><a href="#contact">Contact</a></li></ul></nav>
     <div class="header-actions">
       <button class="icon-btn" id="searchOpen" aria-label="Search products">
         <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
@@ -571,9 +587,7 @@
         <svg viewBox="0 0 24 24" fill="none"><path d="M4 6H6L7.5 15.5H18L20 8H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="19.5" r="1.4" fill="currentColor"/><circle cx="17" cy="19.5" r="1.4" fill="currentColor"/></svg>
         <span class="cart-count" id="cartCount" style="display:none">0</span>
       </button>
-      <div class="header-cta">
-        <a class="btn btn-gold" href="#shop">Shop Now</a>
-      </div>
+      <div class="header-cta"><a class="btn btn-gold" href="#appointments">Book Appointment</a></div>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -581,13 +595,7 @@
   </div>
 </header>
 
-<div class="mobile-nav" id="mobileNav">
-  <a href="#home">Home</a>
-  <a href="#shop">Shop</a>
-  <a href="#about">About Us</a>
-  <a href="#contact">Contact</a>
-  <a class="btn btn-gold" href="#shop">Shop Now</a>
-</div>
+<div class="mobile-nav" id="mobileNav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#poultry">Poultry</a><a href="#cages">Layer Cages</a><a href="#about">About Us</a><a href="#contact">Contact</a><a class="btn btn-gold" href="#appointments">Book Appointment</a></div>
 
 <div class="search-overlay" id="searchOverlay">
   <button class="search-close" id="searchClose" aria-label="Close search">&times;</button>
@@ -597,37 +605,20 @@
   </div>
 </div>
 
-<section class="hero" id="home">
+<section class="hero" id="home"><div class="hero-slide on" style="background-image:url('images/01-hero-layers-barn.jpg')" aria-hidden="true"></div><div class="hero-slide" style="background-image:url('images/02-hero-eggs.jpg')" aria-hidden="true"></div><div class="hero-slide" style="background-image:url('images/03-hero-layer-cages.jpg')" aria-hidden="true"></div><div class="hero-slide" style="background-image:url('images/04-hero-kuroiler.jpg')" aria-hidden="true"></div>
   <div class="wrap">
     <h1>Quality Products for Better Poultry Farming</h1>
     <p>Shop quality poultry feeds and selected poultry products from Isinya Feeds Ltd, serving farmers across Kenya.</p>
     <p class="hero-support">Feeds, poultry products and practical support from a trusted farming partner.</p>
     <div class="hero-actions">
       <a class="btn btn-gold" href="#shop">Shop Our Products</a>
-      <a class="btn btn-outline" href="https://wa.me/254787220794?text=Hello%20Isinya%20Feeds%20Ltd%2C%20I%20would%20like%20to%20talk%20to%20your%20team." target="_blank" rel="noopener">Talk to Us</a>
+      <a class="btn btn-outline" href="#appointments">Book an Appointment</a>
     </div>
   </div>
 </section>
 
 <section class="trust">
-  <div class="wrap trust-grid">
-    <div class="trust-item reveal">
-      <h3>Quality Products</h3>
-      <p>Selected products for poultry farmers and livestock producers.</p>
-    </div>
-    <div class="trust-item reveal">
-      <h3>Kenya-Wide Service</h3>
-      <p>Serving customers across Kenya.</p>
-    </div>
-    <div class="trust-item reveal">
-      <h3>Farmer-Focused</h3>
-      <p>Products backed by practical farming support.</p>
-    </div>
-    <div class="trust-item reveal">
-      <h3>Easy Ordering</h3>
-      <p>Build your order online and confirm it through WhatsApp.</p>
-    </div>
-  </div>
+  <div class="wrap trust-grid"><div class="trust-item reveal"><h3>30,000+</h3><p>Birds Sold</p></div><div class="trust-item reveal"><h3>5,000+</h3><p>Farmers Served</p></div><div class="trust-item reveal"><h3>47</h3><p>Counties Reached</p></div><div class="trust-item reveal"><h3>99%</h3><p>Customer Satisfaction</p></div></div>
 </section>
 
 <section class="shop-intro">
@@ -635,6 +626,7 @@
     <p class="eyebrow">Shop Isinya Feeds</p>
     <h2>Everything You Need to Support Your Poultry Operation</h2>
     <a class="btn btn-green" href="#shop" style="margin-top:22px;">Start Shopping</a>
+    <img class="intro-img" src="images/32-feeds-isinya-feeds-bags.jpg" alt="Isinya Feeds poultry feed bags" loading="lazy">
   </div>
 </section>
 
@@ -668,9 +660,85 @@
     </div>
 
     <div class="product-grid" id="productGrid"></div>
+    <div class="pager" id="pager"></div>
   </div>
 </section>
 
+
+
+<section class="appt" id="appointments">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Book an Appointment</p>
+      <h2>Book Your Appointment with Isinya Feeds</h2>
+      <p class="lead">Plan your appointment in advance to explore our poultry, learn about different breeds and get help choosing the right birds and feeds for your farming project.</p>
+    </div>
+    <div class="appt-grid">
+      <div class="appt-card">
+        <div class="appt-label">Booking Deposit</div>
+        <div class="appt-price">KSh 5,500</div>
+        <p>Applied toward your purchase or refunded, according to the terms below.</p>
+        <ul>
+          <li>If you purchase poultry or other available livestock, KSh 5,500 is deducted from your total purchase price.</li>
+          <li>If you do not make a purchase, the KSh 5,500 deposit is refunded after your appointment.</li>
+        </ul>
+        <div class="appt-item"><strong>KSh 500 – Guidebook &amp; Training.</strong> Covers the guidebook and an introductory poultry farming training session. This amount is non-refundable.</div>
+        <div class="appt-item">Our team will confirm availability and share booking and payment instructions on WhatsApp. Call <a href="tel:+254786100960" style="color:var(--gold-soft);font-weight:600">0786 100 960</a> or WhatsApp <a href="https://wa.me/254787220794" style="color:var(--gold-soft);font-weight:600">0787 220 794</a>.</div>
+      </div>
+      <form class="appt-form" id="apptForm">
+        <h3>Request Your Appointment</h3>
+        <p>Fill in your details and your request opens in WhatsApp for you to review and send.</p>
+        <div class="form-row"><label for="apName">Full Name</label><input id="apName" name="name" required></div>
+        <div class="form-row"><label for="apPhone">Phone Number</label><input id="apPhone" name="phone" type="tel" required></div>
+        <div class="form-row"><label for="apDate">Preferred Date &amp; Time</label><input id="apDate" name="date" placeholder="e.g. Saturday morning" required></div>
+        <div class="form-row"><label for="apNote">What are you interested in?</label><textarea id="apNote" name="note" placeholder="Breeds, quantities, feeds, layer cages..."></textarea></div>
+        <button type="submit" class="btn btn-gold btn-block">Book Appointment via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="poultry" id="poultry">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Poultry</p>
+      <h2>Quality Chicken Breeds &amp; Poultry</h2>
+      <p class="lead">Options for egg production, meat production and mixed farming. Contact us to confirm available breeds, ages, prices, vaccination details and quantities before ordering.</p>
+    </div>
+    <h3 class="sub">Popular Chicken Breeds</h3><div class="product-grid" id="gBreeds"></div>
+    <h3 class="sub">Day-Old to Point-of-Lay Layers</h3>
+    <p class="sub-note">Choose a suitable age for your poultry project. Prices marked indicative are planning guides, not confirmed quotations.</p>
+    <div class="product-grid" id="gStages"></div>
+    <div class="table-wrap"><table class="ptable" id="stageTable"></table></div>
+    <div class="checkout-notice"><strong>Planning tip:</strong> Point-of-lay birds reduce the time spent raising chicks before egg production, while day-old chicks may lower the initial cost per bird. Compare feed, housing, mortality, vaccination and rearing costs before deciding. Commercial layers commonly begin laying around 18–20 weeks, but this varies.</div>
+    <h3 class="sub">Broilers for Meat Production</h3><div class="product-grid" id="gBroilers"></div>
+    <h3 class="sub">Ducks, Ducklings, Kanga &amp; More</h3><div class="product-grid" id="gOther"></div>
+  </div>
+</section>
+
+<section class="cages" id="cages">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Layer Cages</p>
+      <h2>Premium Layer Cages</h2>
+      <p class="lead">Our hot-dip galvanized layer cages are designed for long-lasting poultry production. Systems can include nipple drinkers, feeding troughs, water pipes, connectors and water cisterns. Contact us to confirm specifications, stock and installation options.</p>
+    </div>
+    <div class="cage-gal" id="cageGal"></div>
+    <div class="cage-feat"><h3 style="margin-bottom:12px">Why Choose Our Layer Cages?</h3><ul><li>Heavy-duty hot-dip galvanized steel</li><li>Rust-resistant design</li><li>Nipple drinking system</li><li>Feeding trough and water system options</li><li>Ask us about delivery and installation</li></ul></div>
+    <h3 class="sub">Layer Cage Price List</h3>
+    <div class="cage-prices" id="cagePrices"></div>
+    <form class="cage-form" id="cageForm">
+      <h3>Request a Layer Cage Quote</h3>
+      <p>Tell us your preferred capacity and installation location. Your message opens in WhatsApp so you can review and send it.</p>
+      <div class="form-row"><input name="name" placeholder="Full Name" required></div>
+      <div class="form-row"><input name="phone" type="tel" placeholder="Phone Number" required></div>
+      <div class="form-row"><select name="capacity"><option>96 Birds</option><option>128 Birds</option><option>3,000 Birds</option><option>5,000 Birds</option><option>Other / Need advice</option></select></div>
+      <div class="form-row"><input name="location" placeholder="Installation Location" required></div>
+      <div class="form-row"><textarea name="note" placeholder="Additional information (optional)"></textarea></div>
+      <button type="submit" class="btn btn-green btn-block">Request Quote via WhatsApp</button>
+    </form>
+  </div>
+</section>
 
 <section class="about-compact" id="about">
   <div class="wrap">
@@ -907,11 +975,12 @@
   </div>
 </section>
 
-<section class="faq">
+<section class="faq" id="faq-section">
   <div class="wrap">
     <p class="eyebrow">FAQ</p>
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">How do I book an appointment?<span class="plus">+</span></button><div class="faq-a"><p>Use the Book an Appointment section on this page or message us on WhatsApp. A KSh 5,500 booking deposit applies. It is deducted from your purchase, or refunded if you do not buy.</p></div></div>
       <div class="faq-item">
         <button class="faq-q">How do I place an order?<span class="plus">+</span></button>
         <div class="faq-a"><p>Browse the store, add your products to the cart, review your order and submit it through WhatsApp. Our team will then confirm availability and provide payment and delivery instructions.</p></div>
@@ -968,7 +1037,6 @@
         <div class="val">+254 786 100 960</div>
         <a class="btn btn-outline-dark btn-sm" href="tel:+254786100960">Call Isinya Feeds</a>
       </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1011,13 +1079,14 @@
           <li><a href="#shop" data-filter-link="poultry-feeds">Poultry Feeds</a></li>
           <li><a href="#shop" data-filter-link="livestock-feeds">Livestock Feeds</a></li>
           <li><a href="#shop" data-filter-link="rabbit-feeds">Rabbit Feeds</a></li>
-          <li><a href="#shop">Poultry Products</a></li>
+          <li><a href="#poultry">Poultry</a></li><li><a href="#cages">Layer Cages</a></li>
         </ul>
       </div>
       <div>
         <h4>Company</h4>
         <ul>
           <li><a href="#about">About Us</a></li>
+          <li><a href="#appointments">Book Appointment</a></li>
           <li><a href="#reviews">Farmer Support</a></li>
           <li><a href="#gallery">Service Areas</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -1035,7 +1104,6 @@
     </div>
 <div class="footer-bottom">
   <div>&copy; 2026 Isinya Feeds Ltd. All rights reserved.</div>
-  <div>Powered by <a href="https://mtaaniweb.co.ke/" target="_blank" rel="noopener">MtaaniWeb</a></div>
 </div>
   </div>
 </footer>
@@ -1131,13 +1199,13 @@
 
     // ---- Fertilized Eggs ----
     { id:'fertilized-eggs-tray', name:'Fertilized Eggs (per tray)', price:410, cat:'Fertilized Eggs', catSlug:'fertilized-eggs',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171718/Polish_20260923_152846820_oytrbk.jpg',
+      img:'images/24-eggs-fertilized.jpg',
       desc:'Fertilized eggs sold by the tray, suited to farmers looking to hatch their own chicks. Confirm current availability and delivery arrangements before ordering.',
       overview:'Fertilized Eggs are supplied by the tray for farmers looking to incubate and hatch their own chicks.' },
 
     // ---- Fresh Eggs ----
     { id:'fresh-eggs-tray', name:'Fresh Eggs (per tray)', price:320, cat:'Fresh Eggs', catSlug:'fresh-eggs',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171718/Polish_20260923_152846820_oytrbk.jpg',
+      img:'images/23-eggs-table.jpg',
       desc:'Fresh table eggs sold by the tray, suited to households and farmers looking to buy in bulk. Confirm current availability and delivery arrangements before ordering.',
       overview:'Fresh Eggs are supplied by the tray for everyday household and bulk buying needs.' },
 
@@ -1344,8 +1412,22 @@
       grid.innerHTML = '<div class="no-results">No products match your search or filter.</div>';
       return;
     }
-    grid.innerHTML = list.map(productCardHtml).join('');
+    var key = activeFilter + '|' + activeSort + '|' + activeSearch;
+    if (key !== lastKey) { page = 1; lastKey = key; }
+    var pages = Math.ceil(list.length / PER);
+    if (page > pages) page = pages;
+    grid.innerHTML = list.slice((page - 1) * PER, page * PER).map(productCardHtml).join('');
+    renderPager(pages);
   }
+  var PER = 12, page = 1, lastKey = '';
+  function renderPager(pages) {
+    var el = document.getElementById('pager');
+    if (pages <= 1) { el.innerHTML = ''; return; }
+    var s = '<button ' + (page === 1 ? 'disabled' : '') + ' onclick="goPage(' + (page - 1) + ')" aria-label="Previous page">&lsaquo;</button>';
+    for (var i = 1; i <= pages; i++) s += '<button class="' + (i === page ? 'on' : '') + '" onclick="goPage(' + i + ')">' + i + '</button>';
+    el.innerHTML = s + '<button ' + (page === pages ? 'disabled' : '') + ' onclick="goPage(' + (page + 1) + ')" aria-label="Next page">&rsaquo;</button>';
+  }
+  function goPage(n) { page = n; renderProducts(); document.getElementById('shop').scrollIntoView({ behavior: 'smooth' }); }
 
   // ---------- RENDER: POULTRY PRODUCT GRIDS ----------
   var poultryGridMap = {
@@ -1619,6 +1701,84 @@
     });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
+
+
+  // ---------- POULTRY / CAGES / APPOINTMENTS ----------
+  function WA(t) { return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(t); }
+  function pCard(o) {
+    var act = o.id
+      ? '<button class="add-to-cart-btn" onclick="addToCart(\'' + o.id + '\',1);openCart()">Add to Cart</button><a class="view-btn" href="/product/' + o.id + '">View Product</a>'
+      : '<a class="view-btn" target="_blank" rel="noopener" href="' + WA('Hello Isinya Feeds Ltd, I would like to enquire about ' + o.name + '.') + '">Enquire on WhatsApp</a>';
+    return '<div class="product-card"><div class="product-media media-feeds"><img src="images/' + o.img + '.jpg" alt="' + o.name + '" loading="lazy"></div>' +
+      '<div class="product-body"><div class="product-cat">' + o.tag + '</div><div class="product-name">' + o.name + '</div><div class="product-desc">' + o.desc + '</div>' +
+      '<div class="product-price" style="font-size:' + (o.id ? '1.3rem' : '1.05rem') + '">' + (o.id ? fmt(PRODUCTS.find(function (x) { return x.id === o.id; }).price) : o.price) + '</div>' +
+      '<div class="product-foot card-actions">' + act + '</div></div></div>';
+  }
+  function fill(id, arr) { document.getElementById(id).innerHTML = arr.map(pCard).join(''); }
+  function P(img, tag, name, desc, price, id) { return { img: img, tag: tag, name: name, desc: desc, price: price, id: id }; }
+  fill('gBreeds', [
+    P('04-hero-kuroiler', 'Dual purpose', 'Kuroiler Birds', 'A dual-purpose option for farmers interested in meat and egg production. Good management, feeding and housing support flock performance.', 'Enquire for current rates'),
+    P('05-breed-rainbow', 'Poultry breed', 'Rainbow Layers', 'Productive birds for farmers building a laying flock. Confirm the strain, available age and management requirements with us.', 'Enquire for current rates'),
+    P('06-breed-kenbro', 'Dual purpose', 'Kenbro Chicken', 'A dual-purpose choice for small-scale and commercial farmers. Ask about chick availability, growing birds, feeding and vaccination.', 'Enquire for current rates'),
+    P('07-breed-isa-brown', 'Egg production', 'ISA Brown Layers', 'Commercial brown-egg layers for farmers building an egg-production business. Ask about day-old chicks, growers and point-of-lay birds.', 'Depends on age and availability'),
+    P('08-breed-commercial-layers', 'Commercial layers', 'Commercial Layers', 'Birds selected for commercial egg production. Confirm available growth stages and breeds before purchase.', 'See the stage guide below'),
+    P('09-breed-light-brahma', 'Breeding birds', 'Light Brahma', 'Large, distinctive chickens suited to breeding and ornamental poultry keeping.', 'KSh 2,500 per pair')
+  ]);
+  var STAGES = [
+    P('12-layers-day-old', 'Day-old', 'Day-Old Layer Chicks', 'Start your flock with young layers. Plan for brooding, chick feed, clean water and a vaccination programme.', '', 'chick-layers'),
+    P('13-layers-1-week', '1 week', '1-Week-Old Layers', 'Young chicks needing appropriate brooding, nutrition and routine flock care.', 'Indicative KSh 100–150'),
+    P('14-layers-2-weeks', '2 weeks', '2-Week-Old Layers', 'Developing chicks for farmers who prefer to buy beyond the first week.', 'Indicative KSh 150–200'),
+    P('15-layers-3-weeks', '3 weeks', '3-Week-Old Layers', 'Growing chicks that need continued attention to nutrition, hygiene and vaccination.', 'Indicative KSh 200–280'),
+    P('16-layers-4-weeks', '1 month', '1 Month Old Birds', 'Birds at one month of growth, for farmers looking to skip the earliest brooding stage.', '', 'bird-1month'),
+    P('17-layers-6-8-weeks', '2 months', '2 Months Old Birds', 'Growing pullets for farmers continuing an existing flock or expanding current stock.', '', 'bird-2month'),
+    P('01-hero-layers-barn', '3 months', '3 Months Old Birds', 'Developing pullets approaching the point-of-lay stage.', '', 'bird-3month'),
+    P('08-breed-commercial-layers', '14–16 weeks', 'Older Layer Pullets', 'Birds approaching laying age. Confirm age, breed, weight and vaccination records.', 'Indicative KSh 800–1,000'),
+    P('18-layers-point-of-lay', 'Point of lay', 'Point of Lay Birds', 'Older pullets nearing the start of egg production. Laying time depends on breed, nutrition and management.', '', 'bird-pol')
+  ];
+  fill('gStages', STAGES);
+  document.getElementById('stageTable').innerHTML = '<thead><tr><th>Age / Stage</th><th>Price per bird</th></tr></thead><tbody>' +
+    STAGES.map(function (o) { return '<tr><td>' + o.name + '</td><td>' + (o.id ? fmt(PRODUCTS.find(function (x) { return x.id === o.id; }).price) : o.price) + '</td></tr>'; }).join('') + '</tbody>';
+  fill('gBroilers', [
+    P('19-broilers-day-old', 'Day-old broilers', 'Day-Old Broiler Chicks', 'Meat-production chicks for farmers raising broilers for household, retail or food-service markets.', '', 'chick-broilers'),
+    P('20-broilers-growing', '3–5 weeks', 'Growing Broilers', 'Growing meat birds for farmers who prefer to buy after the early brooding stage.', 'Indicative KSh 250–400'),
+    P('21-broilers-mature', '6–8 weeks', 'Mature Broilers', 'Broilers raised toward market weight. Weight and price depend on feeding, age and demand.', 'Indicative KSh 450–600')
+  ]);
+  fill('gOther', [
+    P('22-goose-mature', 'Other poultry', 'Mature Goose', 'An option for farmers diversifying beyond chickens. Confirm age, breed and availability.', 'KSh 5,800'),
+    P('25-kanga-guinea-fowl', 'Mature birds', 'Mature Kanga (per pair)', 'Hardy guinea fowl suited to free-range farming, breeding and keeping around the homestead. Sold as a pair.', 'KSh 3,000 per pair'),
+    P('26-ducks', 'Farm ducks', 'Ducks & Breeding Pairs', 'Ducks for meat, egg farming or breeding. Price depends on breed, size and sex.', 'KSh 2,000–4,500 per mature bird'),
+    P('27-ducklings', 'Young stock', 'Ducklings', 'Start or expand your duck flock. Keep them warm and provide clean water and suitable starter feed.', 'KSh 300–680 depending on age')
+  ]);
+  document.getElementById('gOther').insertAdjacentHTML('beforeend', '<div class="product-card"><div class="product-media media-feeds"><img src="images/33-duck-feed.jpg" alt="Duck and poultry feed" loading="lazy"></div><div class="product-body"><div class="product-cat">Nutrition &amp; growth</div><div class="product-name">Duck &amp; Poultry Feeds</div><div class="product-desc">Balanced nutrition for every growth stage. Ask for suitable chick and duck mash, growers feed and feeding guidance for your flock. Reference prices: confirm current stock and price before ordering.</div>' + [['10 kg', 'KSh 610'], ['20 kg', 'KSh 1,200'], ['50 kg', 'KSh 2,950'], ['70 kg', 'KSh 4,100']].map(function (r) { return '<div class="feed-row"><span>' + r[0] + '</span><strong>' + r[1] + '</strong><a target="_blank" rel="noopener" href="' + WA('Hello Isinya Feeds Ltd, I would like to enquire about ' + r[0] + ' of duck and poultry feed.') + '">Enquire</a></div>'; }).join('') + '</div></div>');
+  document.getElementById('cageGal').innerHTML = ['28-cages-aisle', '29-cages-feeders', '30-cages-installation', '31-cages-with-hens'].map(function (i) { return '<img src="images/' + i + '.jpg" alt="Layer cage system" loading="lazy">'; }).join('');
+  document.getElementById('cagePrices').innerHTML = [['96 Birds', 'Suitable for a small flock', 'KSh 32,000'], ['128 Birds', 'Extra capacity for growing farms', 'KSh 38,000'], ['3,000 Birds', 'Large-scale poultry production', 'KSh 250,000'], ['5,000 Birds', 'High-capacity production', 'KSh 340,000']].map(function (c) {
+    return '<div class="contact-card"><h4>' + c[0] + '</h4><p style="color:var(--ink-soft);font-size:.88rem">' + c[1] + '</p><div class="val">' + c[2] + '</div><a class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener" href="' + WA('Hello Isinya Feeds Ltd, I would like to enquire about the ' + c[0] + ' layer cage system.') + '">Enquire</a></div>';
+  }).join('');
+  function waForm(id, intro, fields) {
+    document.getElementById(id).addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = this, m = 'Hello Isinya Feeds Ltd,\n\n' + intro + '\n';
+      fields.forEach(function (k) { var v = f.elements[k[0]].value.trim(); if (v) m += '\n' + k[1] + ': ' + v; });
+      window.open(WA(m + '\n\nThank you.'), '_blank', 'noopener');
+      f.reset();
+    });
+  }
+  waForm('apptForm', 'I would like to book an appointment.', [['name', 'Name'], ['phone', 'Phone'], ['date', 'Preferred Date & Time'], ['note', 'Interested In']]);
+  waForm('cageForm', 'I would like a layer cage quote.', [['name', 'Name'], ['phone', 'Phone'], ['capacity', 'Capacity'], ['location', 'Installation Location'], ['note', 'Notes']]);
+
+  // ---------- HERO SLIDESHOW ----------
+  var heroSlides = document.querySelectorAll('.hero-slide'), heroI = 0;
+  setInterval(function () { heroSlides[heroI].classList.remove('on'); heroI = (heroI + 1) % heroSlides.length; heroSlides[heroI].classList.add('on'); }, 5000);
+
+  // ---------- CATEGORY FILTER BUTTONS (from product data) ----------
+  (function () {
+    var r = document.getElementById('filterRow'), seen = {};
+    r.querySelectorAll('[data-filter]').forEach(function (b) { seen[b.getAttribute('data-filter')] = 1; });
+    PRODUCTS.forEach(function (p) {
+      if (seen[p.catSlug]) return; seen[p.catSlug] = 1;
+      var b = document.createElement('button'); b.className = 'filter-btn'; b.setAttribute('data-filter', p.catSlug); b.textContent = p.cat; r.appendChild(b);
+    });
+  })();
 
   // ---------- INITIAL RENDER ----------
   renderProducts();
