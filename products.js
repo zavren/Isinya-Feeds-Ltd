@@ -1,0 +1,87 @@
+/* Isinya Feeds - shared product list.
+   Used by index.html and every page in /product/.
+   To add a product: add one entry here and create its page in /product/. */
+var PRODUCTS = [
+    { id:'chick-mash', name:'Chick Mash', price:3900, cat:'Poultry Feeds', catSlug:'poultry-feeds',
+      img:'/images/feed-chick-mash.jpg',
+      desc:'A poultry feed formulated for chicks during the early stage of growth. Suitable for farmers looking to support healthy development and consistent growth from the beginning of the production cycle.',
+      overview:'Chick Mash is intended for the early stage of poultry growth and provides farmers with a practical feed option for managing young birds.' },
+    { id:'layers-mash', name:'Layers Mash', price:3200, cat:'Poultry Feeds', catSlug:'poultry-feeds',
+      img:'/images/feed-layers-mash.jpg',
+      desc:'Feed for growing and laying birds, providing farmers with a practical option for supporting their layer production programme.',
+      overview:'Layers Mash supports farmers running a layer production programme, providing a practical feed option for growing and laying birds.' },
+    { id:'growers-mash', name:'Growers Mash', price:3300, cat:'Poultry Feeds', catSlug:'poultry-feeds',
+      img:'/images/feed-growers-mash.jpg',
+      desc:'A growers feed option for birds transitioning through the growing stage, supporting continued development as they progress toward production.',
+      overview:'Growers Mash is intended for birds transitioning through the growing stage, supporting continued development toward production.' },
+    { id:'broiler-starter', name:'Broiler Starter', price:4100, cat:'Poultry Feeds', catSlug:'poultry-feeds',
+      img:'/images/feed-broiler-starter.jpg',
+      desc:'Feed designed for the starter stage of broiler production, supporting early growth and development.',
+      overview:'Broiler Starter is designed for the starter stage of broiler production, supporting early growth and development.' },
+    { id:'broiler-finisher', name:'Broiler Finisher', price:3900, cat:'Poultry Feeds', catSlug:'poultry-feeds',
+      img:'/images/feed-broiler-finisher.jpg',
+      desc:'Feed for the finishing stage of broiler production, supporting birds as they progress toward market readiness.',
+      overview:'Broiler Finisher supports birds during the finishing stage of broiler production, as they progress toward market readiness.' },
+    { id:'dairy-meal', name:'Dairy Meal', price:2800, cat:'Livestock Feeds', catSlug:'livestock-feeds',
+      img:'/images/feed-dairy-meal.jpg',
+      desc:'A dairy feed option for farmers looking to support their livestock feeding programme with a convenient farm feed solution.',
+      overview:'Dairy Meal offers farmers a convenient feed solution to support their livestock feeding programme.' },
+    { id:'rabbit-pellets', name:'Rabbit Pellets', price:2900, cat:'Rabbit Feeds', catSlug:'rabbit-feeds',
+      img:'/images/feed-rabbit-pellets.jpg',
+      desc:'Pelleted feed for rabbit farming, providing a convenient feeding option for farmers managing rabbit production.',
+      overview:'Rabbit Pellets provide a convenient pelleted feeding option for farmers managing rabbit production.' },
+
+    // ---- Day-Old Chicks ----
+    { id:'chick-layers', name:'Layers (Day-Old)', price:95, cat:'Day-Old Chicks', catSlug:'day-old-chicks',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171402/Polish_20260923_152218955_ez0vht.jpg',
+      desc:'Day-old layer chicks suited to farmers starting or expanding an egg production programme. Confirm availability and vaccination status before ordering.',
+      overview:'Day-old Layers are intended for farmers building a laying flock, offering a starting point for an egg production programme.' },
+    { id:'chick-broilers', name:'Broilers (Day-Old)', price:90, cat:'Day-Old Chicks', catSlug:'day-old-chicks',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171521/Polish_20260923_152513612_qqdzb2.jpg',
+      desc:'Day-old broiler chicks for farmers running a meat production programme. Confirm availability and vaccination status before ordering.',
+      overview:'Day-old Broilers are intended for farmers running a broiler production programme geared toward meat production.' },
+    { id:'chick-kienyeji', name:'Improved Kienyeji (Day-Old)', price:100, cat:'Day-Old Chicks', catSlug:'day-old-chicks',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1788724936/Clear-pic-of-day-old-chicks-1_s1wpjr.jpg',
+      desc:'Day-old improved kienyeji chicks, a popular option for farmers looking for dual-purpose birds. Confirm availability and vaccination status before ordering.',
+      overview:'Day-old Improved Kienyeji chicks suit farmers looking for a dual-purpose bird for both eggs and meat.' },
+
+    // ---- Growing & Point-of-Lay Birds ----
+    { id:'bird-1month', name:'1 Month Old Birds', price:180, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171566/Polish_20260923_152622050_empv1t.jpg',
+      desc:'Birds at one month of growth, for farmers looking to skip the earliest brooding stage. Confirm current availability and vaccination status before ordering.',
+      overview:'1 Month Old birds give farmers a head start past the earliest brooding stage of poultry rearing.' },
+    { id:'bird-2month', name:'2 Months Old Birds', price:250, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171650/Polish_20260923_152649003_iillmt.jpg',
+      desc:'Birds at two months of growth, suited to farmers continuing an existing flock or expanding current stock. Confirm current availability and vaccination status before ordering.',
+      overview:'2 Months Old birds suit farmers expanding an existing flock further along in the growing stage.' },
+    { id:'bird-3month', name:'3 Months Old Birds', price:300, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171672/Polish_20260923_152727553_w0rlkt.jpg',
+      desc:'Birds at three months of growth, approaching the point-of-lay stage. Confirm current availability and vaccination status before ordering.',
+      overview:'3 Months Old birds are approaching point-of-lay and suit farmers preparing for egg production soon.' },
+    { id:'bird-pol', name:'Point of Lay Birds', price:450, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171695/Polish_20260923_152821183_jifnba.jpg',
+      desc:'Point-of-lay birds ready to begin egg production. Confirm current availability and vaccination status before ordering.',
+      overview:'Point of Lay birds are ready or nearly ready to begin laying, suited to farmers wanting quicker egg production.' },
+
+    // ---- Fertilized Eggs ----
+    { id:'fertilized-eggs-tray', name:'Fertilized Eggs (per tray)', price:410, cat:'Fertilized Eggs', catSlug:'fertilized-eggs',
+      img:'/images/24-eggs-fertilized.jpg',
+      desc:'Fertilized eggs sold by the tray, suited to farmers looking to hatch their own chicks. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Fertilized Eggs are supplied by the tray for farmers looking to incubate and hatch their own chicks.' },
+
+    // ---- Fresh Eggs ----
+    { id:'fresh-eggs-tray', name:'Fresh Eggs (per tray)', price:320, cat:'Fresh Eggs', catSlug:'fresh-eggs',
+      img:'/images/23-eggs-table.jpg',
+      desc:'Fresh table eggs sold by the tray, suited to households and farmers looking to buy in bulk. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Fresh Eggs are supplied by the tray for everyday household and bulk buying needs.' },
+
+    // ---- Mature Improved Kienyeji ----
+    { id:'kienyeji-hen', name:'Mature Improved Kienyeji Hen', price:550, cat:'Mature Improved Kienyeji', catSlug:'mature-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171747/Polish_20260923_152918632_h646xj.jpg',
+      desc:'Mature improved kienyeji hen, available for farmers restocking or starting a breeding flock. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Mature Improved Kienyeji Hens suit farmers restocking or building up a breeding flock.' },
+    { id:'kienyeji-jogoo', name:'Mature Improved Kienyeji Jogoo', price:650, cat:'Mature Improved Kienyeji', catSlug:'mature-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171768/Polish_20260923_152943990_mp2q5e.jpg',
+      desc:'Mature improved kienyeji cockerel (jogoo), available for farmers restocking or starting a breeding flock. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Mature Improved Kienyeji Jogoo (cockerels) suit farmers restocking or building up a breeding flock.' }
+  ];
