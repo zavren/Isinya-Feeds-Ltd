@@ -548,7 +548,7 @@
 .hero{background:none;overflow:hidden}.hero-slide{position:absolute;inset:0;background:center/cover no-repeat;opacity:0;transition:opacity 1.2s ease}.hero-slide.on{opacity:1}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(16,32,20,.55),rgba(16,32,20,.75) 60%,rgba(16,32,20,.92))}.hero .wrap{position:relative;z-index:2}
 .trust-item{text-align:center}.trust-item h3{font-size:2rem;color:var(--gold)}
-.intro-img{max-width:720px;width:100%;margin:30px auto 0;border-radius:6px;aspect-ratio:16/9;object-fit:cover}
+.intro-img{max-width:440px;width:100%;margin:30px auto 0;border-radius:6px;aspect-ratio:906/1245;object-fit:cover;display:block}
 .pager{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:36px}.pager button{min-width:40px;height:40px;border:1px solid var(--line);background:#fff;border-radius:4px;cursor:pointer;font-weight:600;color:var(--green-deep)}.pager button.on{background:var(--green-deep);color:#fff}.pager button:disabled{opacity:.4;cursor:default}
 .appt{background:var(--green-deep);color:#fff}.appt h2,.appt h3{color:#fff}.appt .eyebrow{color:var(--gold-soft)}.appt .lead{color:rgba(255,255,255,.85)}
 .appt-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
@@ -626,7 +626,7 @@
     <p class="eyebrow">Shop Isinya Feeds</p>
     <h2>Everything You Need to Support Your Poultry Operation</h2>
     <a class="btn btn-green" href="#shop" style="margin-top:22px;">Start Shopping</a>
-    <img class="intro-img" src="images/32-feeds-isinya-feeds-bags.jpg" alt="Isinya Feeds poultry feed bags" loading="lazy">
+    <img class="intro-img" src="images/shop-isinya-feeds.jpg" alt="Isinya Feeds poultry feed bags" loading="lazy">
   </div>
 </section>
 
@@ -1104,6 +1104,7 @@
     </div>
 <div class="footer-bottom">
   <div>&copy; 2026 Isinya Feeds Ltd. All rights reserved.</div>
+  <div>Powered by <a href="https://mtaaniweb.co.ke/" target="_blank" rel="noopener">MtaaniWeb</a></div>
 </div>
   </div>
 </footer>
@@ -1137,31 +1138,31 @@
   // ---------- PRODUCT DATA ----------
   var PRODUCTS = [
     { id:'chick-mash', name:'Chick Mash', price:3900, cat:'Poultry Feeds', catSlug:'poultry-feeds',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789908861/Polish_20260920_154829975_lch2ji.jpg',
+      img:'images/feed-chick-mash.jpg',
       desc:'A poultry feed formulated for chicks during the early stage of growth. Suitable for farmers looking to support healthy development and consistent growth from the beginning of the production cycle.',
       overview:'Chick Mash is intended for the early stage of poultry growth and provides farmers with a practical feed option for managing young birds.' },
     { id:'layers-mash', name:'Layers Mash', price:3200, cat:'Poultry Feeds', catSlug:'poultry-feeds',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789908884/Polish_20260920_154931083_ftcpn9.jpg',
+      img:'images/feed-layers-mash.jpg',
       desc:'Feed for growing and laying birds, providing farmers with a practical option for supporting their layer production programme.',
       overview:'Layers Mash supports farmers running a layer production programme, providing a practical feed option for growing and laying birds.' },
     { id:'growers-mash', name:'Growers Mash', price:3300, cat:'Poultry Feeds', catSlug:'poultry-feeds',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789908912/Polish_20260920_154957086_xarurt.jpg',
+      img:'images/feed-growers-mash.jpg',
       desc:'A growers feed option for birds transitioning through the growing stage, supporting continued development as they progress toward production.',
       overview:'Growers Mash is intended for birds transitioning through the growing stage, supporting continued development toward production.' },
     { id:'broiler-starter', name:'Broiler Starter', price:4100, cat:'Poultry Feeds', catSlug:'poultry-feeds',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789908933/Polish_20260920_155014075_wzdsl2.jpg',
+      img:'images/feed-broiler-starter.jpg',
       desc:'Feed designed for the starter stage of broiler production, supporting early growth and development.',
       overview:'Broiler Starter is designed for the starter stage of broiler production, supporting early growth and development.' },
     { id:'broiler-finisher', name:'Broiler Finisher', price:3900, cat:'Poultry Feeds', catSlug:'poultry-feeds',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789908960/Polish_20260920_155057351_vqvcqm.jpg',
+      img:'images/feed-broiler-finisher.jpg',
       desc:'Feed for the finishing stage of broiler production, supporting birds as they progress toward market readiness.',
       overview:'Broiler Finisher supports birds during the finishing stage of broiler production, as they progress toward market readiness.' },
     { id:'dairy-meal', name:'Dairy Meal', price:2800, cat:'Livestock Feeds', catSlug:'livestock-feeds',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789908982/Polish_20260920_155118113_adkpng.jpg',
+      img:'images/feed-dairy-meal.jpg',
       desc:'A dairy feed option for farmers looking to support their livestock feeding programme with a convenient farm feed solution.',
       overview:'Dairy Meal offers farmers a convenient feed solution to support their livestock feeding programme.' },
     { id:'rabbit-pellets', name:'Rabbit Pellets', price:2900, cat:'Rabbit Feeds', catSlug:'rabbit-feeds',
-      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789909006/Polish_20260920_155135095_jup68o.jpg',
+      img:'images/feed-rabbit-pellets.jpg',
       desc:'Pelleted feed for rabbit farming, providing a convenient feeding option for farmers managing rabbit production.',
       overview:'Rabbit Pellets provide a convenient pelleted feeding option for farmers managing rabbit production.' },
 
